@@ -1,0 +1,21 @@
+{
+    "extends": "airbnb",
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "rules": {
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "react/forbid-prop-types":[0,{}],
+      "arrow-parens": 0,
+      "no-console": 1,
+      //不能有聲明後未被使用的變量或參數
+      "no-unused-vars": [1, {"vars": "all", "args": "after-used"}]
+    }
+}
